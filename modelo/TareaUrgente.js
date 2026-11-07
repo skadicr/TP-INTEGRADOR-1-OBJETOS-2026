@@ -1,4 +1,4 @@
-import { Tarea } from "./Tarea.js";
+import { Tarea } from "/tarea.js";
 
 export class TareaUrgente extends Tarea {
     getTipo() {
