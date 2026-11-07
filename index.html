@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gestor de Tareas</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/formulario.css">
+    <link rel="stylesheet" href="css/botones.css">
+    <link rel="stylesheet" href="css/lista.css">
+</head>
+<body>
+    <main class="contenedor">
+        <header class="encabezado">
+            <h1>Gestor de Tareas</h1>
+            <p>Organizá tus tareas y asignalas a un responsable</p>
+        </header>
+
+        <form id="formulario" class="formulario">
+            <div class="campo">
+                <label for="titulo">Tarea</label>
+                <input type="text" id="titulo" placeholder="Ej: Preparar el informe" required>
+            </div>
+            <div class="campo">
+                <label for="responsable">Elegí el responsable de la tarea</label>
+                <select id="responsable"></select>
+            </div>
+            <label class="casilla">
+                <input type="checkbox" id="urgente">
+                <span>Marcar como urgente</span>
+            </label>
+            <button type="submit" class="boton">Agregar tarea</button>
+        </form>
+
+        <h2 class="subtitulo">Mis tareas</h2>
+        <ul id="lista" class="lista"></ul>
+    </main>
+    <script type="module" src="main.js"></script>
+</body>
+</html>
