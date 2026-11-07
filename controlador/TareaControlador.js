@@ -1,7 +1,7 @@
 import { Tarea } from "../modelos/Tarea.js";
 import { TareaUrgente } from "../modelos/TareaUrgente.js";
 import { cargar, guardar } from "../modelos/almacenamiento.js";
-import { obtenerUsuarios } from "../api/usuarioApi.js";
+import { obtenerUsuarios } from "../Api/usuarioApi.js";
 import { TareaVista } from "../vistas/TareaVista.js";
 
 export class TareaControlador {
