@@ -1,0 +1,47 @@
+.boton,
+.boton-secundario,
+.boton-peligro {
+    font: inherit;
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding: 0.55rem 1rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.1s;
+}
+
+.boton:active,
+.boton-secundario:active,
+.boton-peligro:active {
+    transform: translateY(1px);
+}
+
+.boton {
+    padding: 0.8rem 1rem;
+    font-size: 1rem;
+    color: #ffffff;
+    background: var(--primario);
+}
+
+.boton:hover {
+    background: var(--primario-oscuro);
+}
+
+.boton-secundario {
+    color: var(--primario-oscuro);
+    background: #ecebff;
+}
+
+.boton-secundario:hover {
+    background: #deddff;
+}
+
+.boton-peligro {
+    color: var(--peligro);
+    background: #fdecec;
+}
+
+.boton-peligro:hover {
+    background: #fbd9da;
+}

@@ -1,0 +1,82 @@
+.lista {
+    display: grid;
+    gap: 0.75rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.lista:empty::before {
+    content: "Todavía no hay tareas. ¡Agregá la primera!";
+    display: block;
+    padding: 2rem 1rem;
+    text-align: center;
+    color: var(--texto-suave);
+    background: rgba(255, 255, 255, 0.6);
+    border: 2px dashed var(--borde);
+    border-radius: var(--radio);
+}
+
+.tarea {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1rem 1.1rem;
+    background: var(--tarjeta);
+    border-left: 5px solid var(--primario);
+    border-radius: var(--radio);
+    box-shadow: var(--sombra);
+}
+
+.tarea.urgente {
+    border-left-color: var(--peligro);
+}
+
+.tarea.urgente .titulo {
+    color: var(--peligro);
+}
+
+.tarea.completada {
+    border-left-color: var(--exito);
+    opacity: 0.75;
+}
+
+.tarea.completada .titulo {
+    color: var(--texto-suave);
+    text-decoration: line-through;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    min-width: 0;
+}
+
+.titulo {
+    font-weight: 600;
+    word-break: break-word;
+}
+
+.responsable {
+    font-size: 0.85rem;
+    color: var(--texto-suave);
+}
+
+.acciones {
+    display: flex;
+    gap: 0.5rem;
+    flex-shrink: 0;
+}
+
+@media (max-width: 520px) {
+    .tarea {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .acciones {
+        justify-content: flex-end;
+    }
+}

@@ -1,0 +1,53 @@
+:root {
+    --fondo-1: #eef0ff;
+    --fondo-2: #f8f4ff;
+    --tarjeta: #ffffff;
+    --primario: #5b5bd6;
+    --primario-oscuro: #4747b8;
+    --texto: #1f2340;
+    --texto-suave: #6b7194;
+    --borde: #e2e4f3;
+    --peligro: #e5484d;
+    --exito: #30a46c;
+    --sombra: 0 10px 30px rgba(60, 60, 130, 0.1);
+    --radio: 14px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: "Segoe UI", system-ui, -apple-system, Arial, sans-serif;
+    color: var(--texto);
+    background: linear-gradient(160deg, var(--fondo-1) 0%, var(--fondo-2) 100%);
+}
+
+.contenedor {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 2.5rem 1rem 3rem;
+}
+
+.encabezado {
+    text-align: center;
+    margin-bottom: 1.75rem;
+}
+
+.encabezado h1 {
+    margin: 0 0 0.35rem;
+    font-size: 2rem;
+    color: var(--primario-oscuro);
+}
+
+.encabezado p {
+    margin: 0;
+    color: var(--texto-suave);
+}
+
+.subtitulo {
+    margin: 2rem 0 0.75rem;
+    font-size: 1.15rem;
+}
